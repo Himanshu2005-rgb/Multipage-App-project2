@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_above="@id/ll"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Result"
+            android:textSize="40dp"
+            android:id="@+id/evenText"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:id="@+id/evenEdit"
+                android:inputType="number"
+                android:hint="Enter a Number"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:id="@+id/evenButton"
+                android:text="Check"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+        android:text="Even Odd"
+        android:id="@+id/text"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/button3"
+            android:layout_marginLeft="10dp"
+            android:text="Factorial"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/button2"
+            android:layout_marginLeft="30dp"
+            android:text="Calculator"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
